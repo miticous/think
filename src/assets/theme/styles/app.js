@@ -7,3 +7,9 @@ export default StyleSheet.create({
     alignItems: `center`,
   },
 });
+
+export const constants = {
+  activeItemColor: `#000000`,
+  inactiveItemColor: `#dddddd`,
+  footerTabBarIconsSize: 40,
+};
