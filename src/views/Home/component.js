@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 import { PropTypes } from 'prop-types';
-import styles from '../../assets/theme/styles/container';
+import styles from '../../assets/theme/styles/app';
 
 // eslint-disable-next-line react/prop-types
 const HomeComponent = ({ message, personActions: { setMessage } }) => (
@@ -12,9 +12,13 @@ const HomeComponent = ({ message, personActions: { setMessage } }) => (
   </View>
 );
 
+HomeComponent.defaultProps = {
+  setMessage: () => false,
+};
+
 HomeComponent.propTypes = {
   message: PropTypes.string.isRequired,
-  setMessage: PropTypes.func.isRequired,
+  setMessage: PropTypes.func,
   personActions: PropTypes.shape({}).isRequired,
 };
 
