@@ -22,6 +22,7 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 
+images/
 node_modules/
 .eslintrc
 .eslintrc.js
