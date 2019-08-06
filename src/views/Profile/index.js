@@ -1,5 +1,7 @@
 import React from 'react';
+import ProfileContainer from './containers/ProfileContainer';
+import ProfileEditContainer from './containers/ProfileEditContainer';
 
-const Profile = () => <></>;
+export const Profile = props => <ProfileContainer {...props} />;
 
-export default Profile;
+export const ProfileEdit = props => <ProfileEditContainer {...props} />;
