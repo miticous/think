@@ -1,21 +1,20 @@
 /* eslint-disable import/no-named-as-default */
 import React from 'react';
-import { connect } from 'react-redux';
-import { Creators as PersonActions } from '../../../ducks/person';
-import bindActionCreatorsExt from '../../../helpers/bindActionCreatorsExt';
+import PropTypes from 'prop-types';
 import ProfileEditComponent from '../components/ProfileEditComponent';
 
-const ActionCreators = Object.assign({}, { personActions: PersonActions });
+const ProfileEditContainer = ({
+  // navigation,
+  dispatch,
+  creators: { setMessage },
+  personReducer: { message },
+}) => <ProfileEditComponent onPress={() => dispatch(setMessage(`Press Me`))} message={message} />;
 
-const ProfileEditContainer = props => <ProfileEditComponent {...props} />;
+ProfileEditContainer.propTypes = {
+  dispatch: PropTypes.func.isRequired,
+  creators: PropTypes.shape({}).isRequired,
+  navigation: PropTypes.shape({}).isRequired,
+  personReducer: PropTypes.shape({}).isRequired,
+};
 
-const mapStateToProps = state => ({
-  message: state.PersonReducer.message,
-});
-
-const mapDispatchToProps = dispatch => bindActionCreatorsExt(ActionCreators, dispatch);
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(ProfileEditContainer);
+export default ProfileEditContainer;

@@ -3,7 +3,7 @@ export const Types = {
 };
 
 const INITIAL_STATE = {
-  message: `HELLO WORLD`,
+  message: `Press Me`,
 };
 
 export default (state = INITIAL_STATE, { type, payload }) => {

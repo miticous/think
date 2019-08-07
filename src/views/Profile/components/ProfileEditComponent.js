@@ -1,11 +1,17 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
+import PropTypes from 'prop-types';
 import styles from '../../../assets/theme/styles/app';
 
-const ProfileEditComponent = () => (
-  <View style={styles.centeredItemsContainer}>
-    <Text>Profile Edit</Text>
-  </View>
+const ProfileEditComponent = ({ onPress, message }) => (
+  <TouchableOpacity style={styles.centeredItemsContainer} onPress={onPress}>
+    <Text>{message}</Text>
+  </TouchableOpacity>
 );
+
+ProfileEditComponent.propTypes = {
+  onPress: PropTypes.func.isRequired,
+  message: PropTypes.string.isRequired,
+};
 
 export default ProfileEditComponent;
