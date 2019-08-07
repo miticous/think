@@ -10,11 +10,13 @@ Clone project and install packages:
 git clone https://github.com/mam17/think.git
 ```
 ```bash
-cd think/ios && pod install
+cd think && yarn
 ```
 ```bash
-cd .. && yarn
+cd ios && pod install
+cd ..
 ```
+
 
 Run your device.
 
