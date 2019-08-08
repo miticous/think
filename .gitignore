@@ -23,8 +23,6 @@ DerivedData
 project.xcworkspace
 
 node_modules/
-.eslintrc
-.eslintrc.js
 
 # Android/IntelliJ
 #

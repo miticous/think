@@ -8,7 +8,7 @@ import {
 import React from 'react';
 import Home from './views/Home';
 import { Profile, ProfileEdit } from './views/Profile';
-import Icon from './assets/theme/components/icon';
+import Icon from './assets/theme/components/Icon';
 import { constants } from './assets/theme/styles/app';
 
 const ProfileStack = createStackNavigator(
