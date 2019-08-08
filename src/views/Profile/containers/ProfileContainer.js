@@ -2,7 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ProfileComponent from '../components/ProfileComponent';
 
-const ProfileContainer = ({ navigation, dispatch, creators, personReducer }) => (
+const ProfileContainer = ({
+  navigation,
+  dispatch,
+  creators,
+  personReducer
+}) => (
   <ProfileComponent
     onPress={() => navigation.navigate(`ProfileEdit`)}
     onPress2={() => dispatch(creators.setMessage(`PRESS ME`))}

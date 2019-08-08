@@ -24,8 +24,6 @@ project.xcworkspace
 
 images/
 node_modules/
-.eslintrc
-.eslintrc.js
 
 # Android/IntelliJ
 #
