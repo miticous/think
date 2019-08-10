@@ -6,25 +6,41 @@ export const constants = {
   footerTabBarIconsSize: 40,
   SCREEN_WIDTH: Dimensions.get(`screen`).width,
   SCREEN_HEIGHT: Dimensions.get(`screen`).height,
-  circledImageBorderColor: `#dddddd`,
+  primary: `#dddddd`,
+  lowerTextSize: 12,
+  lowTextSize: 16,
+  mediumTextSize: 20,
+  highTextSize: 24,
+  highestTextSize: 26,
 };
 
 export default StyleSheet.create({
+  containerFluid: {
+    paddingHorizontal: 15,
+    paddingVertical: 15,
+  },
   centeredItemsContainer: {
     justifyContent: `center`,
     alignItems: `center`,
   },
+  horizontalItemsContainer: {
+    flexDirection: `row`,
+    justifyContent: `space-between`,
+  },
   circledImage: {
     borderRadius: 100,
-    width: 120,
-    height: 120,
+    width: `90%`,
+    height: `90%`,
     overflow: `hidden`,
   },
   circledImageBox: {
-    width: 140,
+    width: `100%`,
     borderRadius: 100,
-    height: 140,
+    height: `100%`,
     borderWidth: 1,
-    borderColor: constants.circledImageBorderColor,
+  },
+  profileInteractionsCount: {
+    fontSize: constants.highTextSize,
+    fontWeight: `bold`,
   },
 });
