@@ -2,16 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ProfileComponent from '../components/ProfileComponent';
 
-const ProfileContainer = ({
-  navigation,
-  dispatch,
-  creators,
-  personReducer
-}) => (
+// eslint-disable-next-line no-unused-vars
+const ProfileContainer = ({ navigation, dispatch, creators, personReducer }) => (
   <ProfileComponent
-    onPress={() => navigation.navigate(`ProfileEdit`)}
-    onPress2={() => dispatch(creators.setMessage(`PRESS ME`))}
-    message={personReducer.message}
+  // onPress={() => navigation.navigate(`ProfileEdit`)}
+  // onPress2={() => dispatch(creators.setMessage(`PRESS ME`))}
+  // message={personReducer.message}
   />
 );
 
