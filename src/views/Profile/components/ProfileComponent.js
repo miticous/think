@@ -1,10 +1,11 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import PropTypes from 'prop-types';
 import CircledImage from '../../../assets/theme/components/CircledImage';
 import ItemLabel from '../../../assets/theme/components/ItemLabel';
 import styles, { constants } from '../../../assets/theme/styles/app';
 
-const ProfileComponent = () => (
+const ProfileComponent = ({ t }) => (
   <View style={styles.containerFluid}>
     <View style={styles.horizontalItemsContainer}>
       <CircledImage
@@ -13,19 +14,24 @@ const ProfileComponent = () => (
         color={constants.primary}
       />
       <ItemLabel
-        labelText="Images"
+        labelText={t(`app:images`)}
         onClick={() => false}
         item={<Text style={styles.profileInteractionsCount}>31</Text>}
       />
       <ItemLabel
-        labelText="Feeds"
+        labelText="feeds"
         item={<Text style={styles.profileInteractionsCount}>121</Text>}
       />
-      <ItemLabel labelText="About" item={<Text style={styles.profileInteractionsCount}>21</Text>} />
+      <ItemLabel
+        labelText={t(`app:about`)}
+        item={<Text style={styles.profileInteractionsCount}>21</Text>}
+      />
     </View>
   </View>
 );
 
-ProfileComponent.propTypes = {};
+ProfileComponent.propTypes = {
+  t: PropTypes.func.isRequired,
+};
 
 export default ProfileComponent;
