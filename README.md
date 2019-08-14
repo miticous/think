@@ -21,8 +21,7 @@ cd ..
 
 Run your device.
 
-## Usage
-<img src="/images/stage1.png" width="200" height="350"  >
+
 
 ## Contributing
 Want to colaborate? =D Welcome! Open an issue asking for join!
