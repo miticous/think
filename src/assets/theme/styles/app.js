@@ -9,7 +9,7 @@ export const constants = {
   primary: `#dddddd`,
   lowerTextSize: 12,
   lowTextSize: 16,
-  mediumTextSize: 20,
+  mediumTextSize: 18,
   highTextSize: 24,
   highestTextSize: 26,
 };
@@ -18,6 +18,9 @@ export default StyleSheet.create({
   containerFluid: {
     paddingHorizontal: 15,
     paddingVertical: 15,
+  },
+  defaultViewBox: {
+    marginTop: 10,
   },
   centeredItemsContainer: {
     justifyContent: `center`,
@@ -42,5 +45,13 @@ export default StyleSheet.create({
   profileInteractionsCount: {
     fontSize: constants.highTextSize,
     fontWeight: `bold`,
+  },
+  mediumBoldText: {
+    fontSize: constants.mediumTextSize,
+    fontWeight: `500`,
+  },
+  mediumDefaultText: {
+    fontSize: constants.mediumTextSize,
+    fontWeight: `300`,
   },
 });
