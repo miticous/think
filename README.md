@@ -1,6 +1,6 @@
 # Think
 
-Think is a mobile app to help people to find others that have same preferences. Full functional components using HOC.  All the theme components can be easily used as template, one time that all components just need default required props to be used.
+Think is a mobile app to help people to find others that have same preferences. Full functional components using HOC.  All the theme components can be easily used as template, one time that all components just need required default props to be used.
 
 ## Installation
 
