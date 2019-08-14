@@ -1,14 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ProfileComponent from '../components/ProfileComponent';
 
+import ProfileComponent from '../components/ProfileComponent';
 // eslint-disable-next-line no-unused-vars
-const ProfileContainer = ({ navigation, dispatch, creators, personReducer }) => (
-  <ProfileComponent
-  // onPress={() => navigation.navigate(`ProfileEdit`)}
-  // onPress2={() => dispatch(creators.setMessage(`PRESS ME`))}
-  // message={personReducer.message}
-  />
+const ProfileContainer = ({ navigation, dispatch, creators, personReducer, t }) => (
+  <ProfileComponent t={t} />
 );
 
 ProfileContainer.propTypes = {
@@ -16,6 +12,7 @@ ProfileContainer.propTypes = {
   dispatch: PropTypes.func.isRequired,
   creators: PropTypes.shape({}).isRequired,
   personReducer: PropTypes.shape({}).isRequired,
+  t: PropTypes.func.isRequired,
 };
 
 export default ProfileContainer;
