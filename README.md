@@ -1,6 +1,6 @@
 # Think
 
-Think is a mobile app to help people to find others that have same preferences. Full functional components using HOC.
+Think is a Instagram clone. Full functional components using HOC.
 ## Installation
 
 Clone project and install packages:
