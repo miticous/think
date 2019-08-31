@@ -1,6 +1,7 @@
 {
   "app": {
     "images": "imagens",
-    "about": "sobre"
+    "about": "sobre",
+    "new": "Novo"
   }
 }

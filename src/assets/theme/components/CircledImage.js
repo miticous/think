@@ -3,8 +3,9 @@ import React from 'react';
 import { View, ImageBackground } from 'react-native';
 import PropTypes from 'prop-types';
 import styles from '../styles/app';
+import Icon from './Icon';
 
-const CircledImage = ({ url, size, color }) => {
+const CircledImage = ({ url, size, color, iconName }) => {
   const { circledImage, circledImageBox, centeredItemsContainer } = styles;
   return (
     <View
@@ -14,14 +15,18 @@ const CircledImage = ({ url, size, color }) => {
         { width: size, height: size, borderColor: color },
       ]}
     >
-      <View style={circledImage}>
-        <ImageBackground
-          style={{ width: `100%`, height: `100%` }}
-          source={{
-            uri: url,
-          }}
-        />
-      </View>
+      {url ? (
+        <View style={circledImage}>
+          <ImageBackground
+            style={{ width: `100%`, height: `100%` }}
+            source={{
+              uri: url,
+            }}
+          />
+        </View>
+      ) : (
+        iconName && <Icon name={iconName} />
+      )}
     </View>
   );
 };
@@ -29,12 +34,15 @@ const CircledImage = ({ url, size, color }) => {
 CircledImage.defaultProps = {
   size: 120,
   color: `#999`,
+  iconName: ``,
+  url: ``,
 };
 
 CircledImage.propTypes = {
-  url: PropTypes.string.isRequired,
+  url: PropTypes.string,
   size: PropTypes.number,
   color: PropTypes.string,
+  iconName: PropTypes.string,
 };
 
 export default CircledImage;
