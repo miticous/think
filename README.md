@@ -1,7 +1,6 @@
 # Think
 
-Think is a mobile app to help people to find others that have same preferences. Full functional components using HOC.  All the theme components can be easily used as template, one time that all components just need required default props to be used.
-
+Think is a Instagram clone. Full functional components using HOC.
 ## Installation
 
 Clone project and install packages:
@@ -21,7 +20,7 @@ cd ..
 Run your device.
 
 ## Usage
-<img src="/images/stage1.png" width="200" height="350"  >
+<img src="/images/state1.png" width="200" height="350"  >
 
 ## Contributing
 Want to colaborate? =D Welcome! Open an issue asking for join!
