@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
-import styles from '../styles/app';
+import styles, { constants } from '../styles/app';
 
 const ItemLabel = ({ item, boxStyle, labelStyle, labelText, key, onPress }) => (
   <TouchableOpacity activeOpacity={1} onPress={onPress} style={boxStyle} key={key}>
@@ -13,7 +13,8 @@ const ItemLabel = ({ item, boxStyle, labelStyle, labelText, key, onPress }) => (
 ItemLabel.defaultProps = {
   boxStyle: styles.centeredItemsContainer,
   labelStyle: {
-    color: `#999`,
+    fontSize: constants.lowerTextSize,
+    color: `#000`,
   },
   labelText: ``,
   onPress: () => false,

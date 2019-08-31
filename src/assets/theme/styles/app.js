@@ -8,10 +8,10 @@ export const constants = {
   SCREEN_HEIGHT: Dimensions.get(`screen`).height,
   primary: `#dddddd`,
   lowerTextSize: 12,
-  lowTextSize: 16,
-  mediumTextSize: 18,
-  highTextSize: 24,
-  highestTextSize: 26,
+  lowTextSize: 14,
+  mediumTextSize: 16,
+  highTextSize: 20,
+  highestTextSize: 24,
 };
 
 export default StyleSheet.create({
@@ -20,7 +20,7 @@ export default StyleSheet.create({
     paddingVertical: 15,
   },
   defaultViewBox: {
-    marginTop: 10,
+    marginTop: 15,
   },
   centeredItemsContainer: {
     justifyContent: `center`,
@@ -42,16 +42,22 @@ export default StyleSheet.create({
     height: `100%`,
     borderWidth: 1,
   },
+  defaultButtonBox: {
+    borderColor: constants.primary,
+    borderWidth: 1,
+    borderRadius: 4,
+  },
+  defaultButtonTextBox: {
+    paddingVertical: 5,
+  },
   profileInteractionsCount: {
     fontSize: constants.highTextSize,
     fontWeight: `bold`,
   },
   mediumBoldText: {
-    fontSize: constants.mediumTextSize,
     fontWeight: `500`,
   },
   mediumDefaultText: {
-    fontSize: constants.mediumTextSize,
     fontWeight: `300`,
   },
 });

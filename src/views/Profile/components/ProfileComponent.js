@@ -5,6 +5,7 @@ import CircledImage from '../../../assets/theme/components/CircledImage';
 import ItemLabel from '../../../assets/theme/components/ItemLabel';
 import styles, { constants } from '../../../assets/theme/styles/app';
 import SpotLightsCarousel from '../../../assets/theme/components/SpotLightsCarousel';
+import DefaultButton from '../../../assets/theme/components/DefaultButton';
 
 const ProfileComponent = ({ t, profileSpotLights }) => (
   <View style={styles.containerFluid}>
@@ -36,6 +37,9 @@ const ProfileComponent = ({ t, profileSpotLights }) => (
         Goianiense, 25{`\n`}Floripa-SC 📍{`\n`}Engenheiro de Software 💻{`\n`}Mid laner 🕹{`\n`}
         Arthur Medeiros 💙{`\n`}“Legends never die...”
       </Text>
+    </View>
+    <View style={styles.defaultViewBox}>
+      <DefaultButton name="Editar perfil" onPress={() => false} />
     </View>
     <View style={styles.defaultViewBox}>
       <SpotLightsCarousel data={profileSpotLights} addSpotlightText={t(`app:new`)} />
