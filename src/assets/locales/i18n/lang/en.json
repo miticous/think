@@ -2,6 +2,7 @@
   "app": {
     "images": "images",
     "about": "about",
-    "new": "New"
+    "new": "New",
+    "edit_profile": "Edit profile"
   }
 }

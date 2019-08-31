@@ -2,6 +2,7 @@
   "app": {
     "images": "imagens",
     "about": "sobre",
-    "new": "Novo"
+    "new": "Novo",
+    "edit_profile": "Editar perfil"
   }
 }
