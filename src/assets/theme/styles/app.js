@@ -50,6 +50,10 @@ export default StyleSheet.create({
   defaultButtonTextBox: {
     paddingVertical: 5,
   },
+  defaultImage: {
+    height: 93,
+    resizeMode: `cover`,
+  },
   profileInteractionsCount: {
     fontSize: constants.highTextSize,
     fontWeight: `bold`,
@@ -66,5 +70,9 @@ export default StyleSheet.create({
     height: 45,
     borderTopWidth: 0.5,
     borderTopColor: constants.primary,
+  },
+  mediaGrid: {
+    flex: 1,
+    padding: 1,
   },
 });

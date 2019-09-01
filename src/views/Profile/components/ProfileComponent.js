@@ -10,7 +10,14 @@ import DefaultButton from '../../../assets/theme/components/DefaultButton';
 import MediaGrid from '../../../assets/theme/components/ MediaGrid';
 import TabBar from '../../../assets/theme/components/TabBar';
 
-const ProfileComponent = ({ t, navigationState, setNavigationState, profileSpotLights }) => (
+const ProfileComponent = ({
+  t,
+  navigationState,
+  setNavigationState,
+  profileSpotLights,
+  profilePersonalImages,
+  profileTaggedImages,
+}) => (
   <ScrollView showsVerticalScrollIndicator={false}>
     <View style={styles.containerFluid}>
       <View style={styles.horizontalItemsContainer}>
@@ -53,8 +60,8 @@ const ProfileComponent = ({ t, navigationState, setNavigationState, profileSpotL
       navigationState={navigationState}
       onIndexChange={index => setNavigationState({ ...navigationState, index })}
       renderScene={SceneMap({
-        personal: () => <MediaGrid />,
-        tagged: () => <MediaGrid />,
+        personal: () => <MediaGrid data={profilePersonalImages} />,
+        tagged: () => <MediaGrid data={profileTaggedImages} />,
       })}
       renderTabBar={props => <TabBar {...props} />}
     />
@@ -70,6 +77,8 @@ ProfileComponent.propTypes = {
   profileSpotLights: PropTypes.arrayOf(PropTypes.shape({})),
   navigationState: PropTypes.shape({}).isRequired,
   setNavigationState: PropTypes.func.isRequired,
+  profilePersonalImages: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
+  profileTaggedImages: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
 };
 
 export default ProfileComponent;
