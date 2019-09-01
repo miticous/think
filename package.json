@@ -17,6 +17,7 @@
     "react-native-reanimated": "^1.1.0",
     "react-native-svg": "^9.5.3",
     "react-native-svg-icon": "^0.8.1",
+    "react-native-tab-view": "^2.10.0",
     "react-navigation": "^3.11.1",
     "react-redux": "^7.1.0",
     "redux": "^4.0.4",

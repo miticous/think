@@ -60,4 +60,11 @@ export default StyleSheet.create({
   mediumDefaultText: {
     fontWeight: `300`,
   },
+  tabBar: {
+    backgroundColor: `#fff`,
+    justifyContent: `center`,
+    height: 45,
+    borderTopWidth: 0.5,
+    borderTopColor: constants.primary,
+  },
 });

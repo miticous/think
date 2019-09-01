@@ -28,4 +28,24 @@ export const profileSpotLights = [
       },
     ],
   },
+  {
+    title: `Praias`,
+    mainImage: `https://scontent.fgyn2-1.fna.fbcdn.net/v/t1.0-9/35891931_807281396143522_2979038107334082560_o.jpg?_nc_cat=106&_nc_eui2=AeEJyzidpL4o-mZ7tUqsbCXuxj0rZpO-naBRxcBz7hk5WnzSkdMMB5yhFYYc2fvbqr6Slb32L-3Q-GGIpxaMfS_vrS8gGMnlT5a-uhBVAZ_xAA&_nc_oc=AQmZcC0zkU8nSDvi-4ZoflG727AFkoXWvv-S6Xt6hnw_5Xn9QvyB0q-R20kJpf1B79wSxwWmw-4op_NHFc-ylu5g&_nc_ht=scontent.fgyn2-1.fna&oh=5eff1e54493c43571b2a7806a29c9937&oe=5E1337B8`,
+    images: [
+      {
+        dateTime: `17:45:23`,
+        url: ``,
+      },
+    ],
+  },
+  {
+    title: `Descanso`,
+    mainImage: `https://scontent.fgyn2-1.fna.fbcdn.net/v/t1.0-9/48360794_2582147085136399_5295237876131299328_n.jpg?_nc_cat=100&_nc_eui2=AeE5yxdeYIyA-_SvBtbhLH5SFdboGxo6fpXfppFT5yfTLsne6U4FBQSatdPCR09s6_H8UDHEYJxP6nxSv9KqGI1Cv50oiJ2akUkFX96D_8mPlw&_nc_oc=AQluBcMuiMMOAduyJOuvRSvCy3kzxn5cS7dOvpUWZbgvyr-OfLBPKpSjxIWtIaS8u1GAsxZgclGGJj0A0zFzdzu9&_nc_ht=scontent.fgyn2-1.fna&oh=11ca2ee3f18ba6ac0c876d6bae21a53e&oe=5E08497F`,
+    images: [
+      {
+        dateTime: `17:45:23`,
+        url: ``,
+      },
+    ],
+  },
 ];

@@ -6,7 +6,7 @@ import { constants } from '../styles/app';
 import ItemLabel from './ItemLabel';
 
 const SpotLightsCarousel = ({ data, addSpotlightText }) => (
-  <ScrollView horizontal>
+  <ScrollView horizontal showsHorizontalScrollIndicator={false}>
     <View style={{ marginRight: 10 }}>
       <ItemLabel
         item={<CircledImage iconName="Plus" size={60} color={constants.primary} />}
