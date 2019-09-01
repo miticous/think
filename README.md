@@ -12,7 +12,7 @@ git clone https://github.com/mam17/think.git
 cd think && yarn
 ```
 ```bash
-cd ios && pod install (iOS)
+cd ios && pod install (for iOS devices)
 cd ..
 ```
 
