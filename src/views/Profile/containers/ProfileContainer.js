@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import ProfileComponent from '../components/ProfileComponent';
 import { profileSpotLights } from '../../../mocks';
 
 // eslint-disable-next-line no-unused-vars
-const ProfileContainer = ({ navigation, dispatch, creators, personReducer, t }) => (
-  <ProfileComponent t={t} profileSpotLights={profileSpotLights} />
-);
+const ProfileContainer = ({ navigation, dispatch, creators, personReducer, t }) => {
+  const [navigationState, setNavigationState] = useState({
+    index: 0,
+    routes: [{ key: `personal` }, { key: `tagged` }],
+  });
+
+  return (
+    <ProfileComponent
+      t={t}
+      profileSpotLights={profileSpotLights}
+      navigationState={navigationState}
+      setNavigationState={setNavigationState}
+    />
+  );
+};
 
 ProfileContainer.propTypes = {
   navigation: PropTypes.shape({}).isRequired,
