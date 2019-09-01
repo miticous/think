@@ -1,20 +1,23 @@
 /* eslint-disable import/no-named-as-default */
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import ProfileEditComponent from '../components/ProfileEditComponent';
 
-const ProfileEditContainer = ({
+const ProfileEditContainer = () => (
+  // {
   // navigation,
-  dispatch,
-  creators: { setMessage },
-  personReducer: { message },
-}) => <ProfileEditComponent onPress={() => dispatch(setMessage(`Press Me`))} message={message} />;
+  // dispatch,
+  // creators: { setMessage },
+  // personReducer: { message },
+  // },
+  <ProfileEditComponent />
+);
 
 ProfileEditContainer.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-  creators: PropTypes.shape({}).isRequired,
-  navigation: PropTypes.shape({}).isRequired,
-  personReducer: PropTypes.shape({}).isRequired,
+  // dispatch: PropTypes.func.isRequired,
+  // creators: PropTypes.shape({}).isRequired,
+  // navigation: PropTypes.shape({}).isRequired,
+  // personReducer: PropTypes.shape({}).isRequired,
 };
 
 export default ProfileEditContainer;

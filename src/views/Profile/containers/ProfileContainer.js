@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import ProfileComponent from '../components/ProfileComponent';
-import { profileSpotLights, profilePersonalImages, profileTaggedImages } from '../../../mocks';
+import { profileSpotLights, profilePersonalPosts, profileTaggedImages } from '../../../mocks';
 
 // eslint-disable-next-line no-unused-vars
 const ProfileContainer = ({ navigation, dispatch, creators, personReducer, t }) => {
@@ -13,8 +13,9 @@ const ProfileContainer = ({ navigation, dispatch, creators, personReducer, t }) 
   return (
     <ProfileComponent
       t={t}
+      navigation={navigation}
       profileSpotLights={profileSpotLights}
-      profilePersonalImages={profilePersonalImages}
+      profilePersonalPosts={profilePersonalPosts}
       profileTaggedImages={profileTaggedImages}
       navigationState={navigationState}
       setNavigationState={setNavigationState}
