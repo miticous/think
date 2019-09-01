@@ -6,7 +6,7 @@ import {
 } from 'react-navigation';
 import React from 'react';
 import Home from './views/Home';
-import { Profile, ProfileEdit } from './views/Profile';
+import { Profile, ProfileEdit, ProfilePosts } from './views/Profile';
 import Icon from './assets/theme/components/Icon';
 import { constants } from './assets/theme/styles/app';
 
@@ -15,14 +15,15 @@ const ProfileStack = createStackNavigator(
     Profile: { screen: Profile },
     ProfileEdit: { screen: ProfileEdit },
   },
-  { mode: `modal` },
+  { mode: `modal`, headerMode: `none` },
 );
 
 const ProfileMainStack = createStackNavigator(
   {
     Profile: { screen: ProfileStack },
+    ProfilePosts: { screen: ProfilePosts },
   },
-  { headerMode: `none` },
+  // { initialRouteName: `ProfilePosts` },
 );
 
 const TabNavigator = createBottomTabNavigator(
@@ -43,6 +44,7 @@ const TabNavigator = createBottomTabNavigator(
         ),
       };
     },
+    initialRouteName: `Profile`,
   },
 );
 
@@ -58,9 +60,5 @@ const AppSwitchNavigator = createSwitchNavigator({
 });
 
 const AppContainer = createAppContainer(AppSwitchNavigator);
-
-AppContainer.defaultProps = {
-  focused: false,
-};
 
 export default AppContainer;

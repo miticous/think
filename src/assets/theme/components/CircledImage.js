@@ -25,8 +25,9 @@ const CircledImage = ({ url, size, color, iconName }) => {
           />
         </View>
       ) : (
-        iconName && <Icon name={iconName} />
+        false
       )}
+      {iconName && <Icon name={iconName} />}
     </View>
   );
 };
@@ -34,7 +35,7 @@ const CircledImage = ({ url, size, color, iconName }) => {
 CircledImage.defaultProps = {
   size: 120,
   color: `#999`,
-  iconName: ``,
+  iconName: null,
   url: ``,
 };
 

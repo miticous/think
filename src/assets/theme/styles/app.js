@@ -12,6 +12,8 @@ export const constants = {
   mediumTextSize: 16,
   highTextSize: 20,
   highestTextSize: 24,
+  smallIconSize: 26,
+  mediumIconSize: 26,
 };
 
 export default StyleSheet.create({
@@ -25,6 +27,10 @@ export default StyleSheet.create({
   centeredItemsContainer: {
     justifyContent: `center`,
     alignItems: `center`,
+  },
+  rightedItemsContaner: {
+    justifyContent: `center`,
+    alignItems: `flex-end`,
   },
   horizontalItemsContainer: {
     flexDirection: `row`,
@@ -54,9 +60,17 @@ export default StyleSheet.create({
     height: 93,
     resizeMode: `cover`,
   },
+  fullImage: {
+    width: `100%`,
+    height: `100%`,
+  },
   profileInteractionsCount: {
     fontSize: constants.highTextSize,
     fontWeight: `bold`,
+  },
+  lowerDefaultText: {
+    fontSize: constants.lowerTextSize,
+    fontWeight: `300`,
   },
   mediumBoldText: {
     fontWeight: `500`,
