@@ -39,7 +39,7 @@ const ProfileComponent = ({ t, profileSpotLights }) => (
       </Text>
     </View>
     <View style={styles.defaultViewBox}>
-      <DefaultButton name="Editar perfil" onPress={() => false} />
+      <DefaultButton name={t(`app:edit_profile`)} onPress={() => false} />
     </View>
     <View style={styles.defaultViewBox}>
       <SpotLightsCarousel data={profileSpotLights} addSpotlightText={t(`app:new`)} />
