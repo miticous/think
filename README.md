@@ -20,7 +20,7 @@ cd ..
 Run your device.
 
 ## Usage
-<img src="/images/stage1.png" width="200" height="350"  > <img src="/images/stage2.png" width="200" height="350"  >
+<img src="/images/stage1.png" width="200" height="350"  > <img src="/images/stage2.png" width="200" height="350"  > <img src="/images/stage3.png" width="200" height="350"  >
 
 ## Sup
 I can answer all the doubts at open issues, but I'm thinking about start a youtube live tutorial
