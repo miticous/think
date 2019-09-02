@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import ProfilePostsComponent from '../components/ProfilePostsComponent';
 import { profilePersonalPosts } from '../../../mocks';
 
+const onPressDetachedLike = () => {};
+
+const onPressOthers = () => {};
+
 const ProfilePostsContainer = ({
   navigation,
   // dispatch, creators, personReducer,
@@ -15,7 +19,16 @@ const ProfilePostsContainer = ({
       },
     },
   } = navigation;
-  return <ProfilePostsComponent t={t} initialScrollIndex={index} data={profilePersonalPosts} />;
+
+  return (
+    <ProfilePostsComponent
+      t={t}
+      initialScrollIndex={index}
+      data={profilePersonalPosts}
+      onPressDetachedLike={onPressDetachedLike}
+      onPressOthers={onPressOthers}
+    />
+  );
 };
 
 ProfilePostsContainer.propTypes = {
