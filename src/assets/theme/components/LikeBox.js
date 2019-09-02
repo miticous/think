@@ -43,7 +43,7 @@ const LikeBox = ({ t, data, onPressDetachedLike, onPressOthers }) => (
         {t(`app:and`)}
         {` `}
         <Text onPress={onPressOthers} style={{ fontWeight: `bold` }}>
-          outras pessoas
+          {t(`app:others`)}
         </Text>
       </Text>
     </View>
