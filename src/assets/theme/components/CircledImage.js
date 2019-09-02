@@ -12,7 +12,7 @@ const CircledImage = ({ url, size, color, iconName }) => {
       style={[
         circledImageBox,
         centeredItemsContainer,
-        { width: size, height: size, borderColor: color },
+        { width: size, height: size, borderColor: color, overflow: `hidden` },
       ]}
     >
       {url ? (

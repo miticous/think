@@ -3,6 +3,8 @@
     "images": "images",
     "about": "about",
     "new": "New",
-    "edit_profile": "Edit profile"
+    "edit_profile": "Edit profile",
+    "liked_by": "Liked by",
+    "and": "and"
   }
 }

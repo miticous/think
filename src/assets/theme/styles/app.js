@@ -6,6 +6,7 @@ export const constants = {
   footerTabBarIconsSize: 40,
   SCREEN_WIDTH: Dimensions.get(`screen`).width,
   SCREEN_HEIGHT: Dimensions.get(`screen`).height,
+  MAX_TOP_LIKES_LISTED: 3,
   primary: `#dddddd`,
   lowerTextSize: 12,
   lowTextSize: 14,

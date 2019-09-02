@@ -3,6 +3,8 @@
     "images": "imagens",
     "about": "sobre",
     "new": "Novo",
-    "edit_profile": "Editar perfil"
+    "edit_profile": "Editar perfil",
+    "liked_by": "Curtido por",
+    "and": "e"
   }
 }
