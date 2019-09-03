@@ -7,15 +7,17 @@ import CircledImage from './CircledImage';
 
 const getTopLikes = data => {
   if (not(isEmpty(data))) {
-    return data.map(like => {
-      const { mainImage, username } = like;
+    return data
+      .map(like => {
+        const { mainImage, username } = like;
 
-      return (
-        <View key={username} style={{ flex: 1 }}>
-          <CircledImage url={mainImage} size={constants.smallIconSize} color="#fff" />
-        </View>
-      );
-    });
+        return (
+          <View key={username} style={{ flex: 1 }}>
+            <CircledImage url={mainImage} size={constants.smallIconSize} color="#fff" />
+          </View>
+        );
+      })
+      .slice(0, constants.MAX_TOP_LIKES_LISTED);
   }
   return [];
 };
