@@ -1,6 +1,6 @@
 # Think
 
-Think is a Instagram clone. Full functional components using HOC.
+Think is an Instagram clone. Full functional components using HOC.
 ## Installation
 
 Clone project and install packages:
